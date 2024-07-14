@@ -1,0 +1,14 @@
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.exe
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.deps.json
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.runtimeconfig.json
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\bin\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfoInputs.cache
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.AssemblyInfo.cs
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.csproj.CoreCompileInputs.cache
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.dll
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\refint\Student.SharpInstructions.dll
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.pdb
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\Student.SharpInstructions.genruntimeconfig.cache
+C:\Users\vi\Desktop\c#\Student.SharpInstructions\Student.SharpInstructions\obj\Debug\net8.0\ref\Student.SharpInstructions.dll
