@@ -6,8 +6,9 @@ namespace Student.SharpInstructions
 
         static void Main()
         {
-            while(true) 
+            while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Для вызова выполняемой подпрограммы укажите ее номер и нажните Enter:\r\n1 - IF ELSE\r\n2 - WHILE\r\n3 - DO WHILE\r\n4 - FOR\r\n5 - FOREACH\r\n6 - SWITCH");
                 switch (Console.ReadLine())
                 {
@@ -29,6 +30,7 @@ namespace Student.SharpInstructions
                     case "6":
                         SWITCH();
                         break;
+
                 }
             }
         }
@@ -36,21 +38,30 @@ namespace Student.SharpInstructions
         {
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Для выполнения подпрограммы IF ELSE введите число нажмите Enter\r\n\t");
-                int number = int.Parse(Console.ReadLine());
-                if (number > 0)
+                try
                 {
-                    Console.WriteLine("Число положительное.");
+                    int number = int.Parse(Console.ReadLine());
+                    Console.Clear();
+                    if (number > 0)
+                    {
+                        Console.WriteLine("\tЧисло положительное.");
+                    }
+                    else if (number < 0)
+                    {
+                        Console.WriteLine("\tЧисло отрицательное.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\tЧисло равно нулю.");
+                    }
                 }
-                else if (number < 0)
+                catch (FormatException)
                 {
-                    Console.WriteLine("Число отрицательное.");
+                    continue;
                 }
-                else
-                {
-                    Console.WriteLine("Число равно нулю.");
-                }
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;
@@ -65,16 +76,25 @@ namespace Student.SharpInstructions
         {
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Для выполнения подпрограммы WHILE введите число нажмите Enter\r\n\t");
                 int count = 0;
-                int maxCount = int.Parse(Console.ReadLine());
-
+                int maxCount = 0;
+                try
+                {
+                    maxCount = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    continue;
+                }
+                Console.Clear();
                 while (count < maxCount)
                 {
-                    Console.WriteLine($"Повторение номер {count + 1}");
+                    Console.WriteLine($"\tПовторение номер {count + 1}");
                     count++;
                 }
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;
@@ -89,15 +109,25 @@ namespace Student.SharpInstructions
         {
             while(true)
             {
-                Console.WriteLine("Для выполнения подпрограммы DO_WHILE введите число нажмите Enter\r\n\t");
+                Console.Clear();
+                Console.WriteLine("\tДля выполнения подпрограммы DO_WHILE введите число нажмите Enter\r\n\t");
                 int count = 0;
-                int maxCount = int.Parse(Console.ReadLine());
+                int maxCount = 0;
+                try
+                {
+                    maxCount = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    continue;
+                }
+                Console.Clear();
                 do
                 {
-                    Console.WriteLine($"Повторение номер {count + 1}");
+                    Console.WriteLine($"\tПовторение номер {count + 1}");
                     count++;
                 } while (count < maxCount);
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;
@@ -112,15 +142,26 @@ namespace Student.SharpInstructions
         {
             while (true)
             {
-                Console.WriteLine("Для выполнения подпрограммы FOR введите начальное число и количество повторений последовательно через Enter\r\n\t");
-                int a1 = int.Parse(Console.ReadLine());
-                int a2 = int.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("\tДля выполнения подпрограммы FOR введите начальное число и количество повторений последовательно через Enter\r\n\t");
+                int a1 = 0;
+                int a2 = 0;
+                try
+                {
+                    a1 = int.Parse(Console.ReadLine());
+                    a2 = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    continue;
+                }
+                Console.Clear();
                 int[] a = new int[2] { a1, a2 };
                 for (int i = a[0]; i <= a[1]; i++)
                 {
                     Console.WriteLine(i);
                 }
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;
@@ -136,13 +177,14 @@ namespace Student.SharpInstructions
         {
             while (true)
             {
+                Console.Clear();
                 List<string> items = new List<string> { "яблоко", "банан", "апельсин" };
 
                 foreach (string item in items)
                 {
-                    Console.WriteLine($"Элемент: {item}");
+                    Console.WriteLine($"\tЭлемент: {item}");
                 }
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;
@@ -157,9 +199,18 @@ namespace Student.SharpInstructions
         {
             while (true)
             {
-                Console.WriteLine("Для выполнения подпрограммы SWITCH введите одно число в диапозоне от 1 до 7 нажмите Enter\r\n\t");
-                int day = int.Parse(Console.ReadLine());
-
+                Console.Clear();
+                Console.WriteLine("\tДля выполнения подпрограммы SWITCH введите одно число в диапозоне от 1 до 7 нажмите Enter\r\n\t");
+                int day = 0;
+                try
+                {
+                    day = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    continue;
+                }
+                Console.Clear();
                 switch (day)
                 {
                     case 1:
@@ -187,7 +238,7 @@ namespace Student.SharpInstructions
                         Console.WriteLine("Некорректный ввод. Введите число от 1 до 7.");
                         break;
                 }
-                Console.WriteLine("Для повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
+                Console.WriteLine("\tДля повтора выполнения подпрограммы нажмите Enter, для возврата к списку подпрограмм нажмите Esc:\r\n");
                 if (EXIT())
                 {
                     break;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vi\\Desktop\\c#\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj": {}
+    "C:\\Users\\vi\\Desktop\\git\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vi\\Desktop\\c#\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj": {
+    "C:\\Users\\vi\\Desktop\\git\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vi\\Desktop\\c#\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj",
+        "projectUniqueName": "C:\\Users\\vi\\Desktop\\git\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj",
         "projectName": "Student.SharpInstructions",
-        "projectPath": "C:\\Users\\vi\\Desktop\\c#\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj",
+        "projectPath": "C:\\Users\\vi\\Desktop\\git\\Student.SharpInstructions\\Student.SharpInstructions\\Student.SharpInstructions.csproj",
         "packagesPath": "C:\\Users\\vi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vi\\Desktop\\c#\\Student.SharpInstructions\\Student.SharpInstructions\\obj\\",
+        "outputPath": "C:\\Users\\vi\\Desktop\\git\\Student.SharpInstructions\\Student.SharpInstructions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
